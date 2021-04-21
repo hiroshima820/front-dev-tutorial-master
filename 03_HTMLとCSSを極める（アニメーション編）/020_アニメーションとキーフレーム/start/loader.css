@@ -11,14 +11,21 @@ body {
           animation: sk-bouncedelay 1.4s;
 }
 
+.paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
 @-webkit-keyframes sk-bouncedelay {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
+    background-color: black;
   }
   to {
     -webkit-transform: scale(1);
             transform: scale(1);
+    background-color: green;
   }
 }
 
@@ -26,10 +33,12 @@ body {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
+    background-color: black;
   }
   to {
     -webkit-transform: scale(1);
             transform: scale(1);
+    background-color: green;
   }
 }
 /*# sourceMappingURL=loader.css.map */
